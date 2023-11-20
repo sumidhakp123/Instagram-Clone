@@ -1,6 +1,7 @@
 <div align="center">
   <img src="https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/23519098-3600-4da5-ab56-282126afb43a" width="50%" alt="InstagramClone.png">
 </div>
+
 # Instagram-Clone
  
 
