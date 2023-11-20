@@ -17,7 +17,7 @@ After database creation several tricky challenges were performed to through SQL 
 ## ER Diagram of Instagram-Clone
 ![image](https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/67c69e54-87fd-49ee-b624-6eaa0c1deda2)
 <div align="center">
-  <img src="(https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/67c69e54-87fd-49ee-b624-6eaa0c1deda2" width="75%" alt="ER Diagram.png">
+  <img src="https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/67c69e54-87fd-49ee-b624-6eaa0c1deda2" width="75%" alt="ER Diagram.png">
 </div>
 
 
