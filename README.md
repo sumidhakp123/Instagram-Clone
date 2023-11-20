@@ -30,65 +30,22 @@ After database creation several tricky challenges were performed to through SQL 
 -- We need to figure out when to schedule an ad campgain
 - 3. We want to target our inactive users with an email campaign.
 -- Find the users who have never posted a photo
-- 4.-- q4 
-/*We're running a new contest to see who can get the most likes on a single photo.
-WHO WON??!!*/
+- 4. We're running a new contest to see who can get the most likes on a single photo. WHO WON??!!
+- 5. Our Investors want to know...
+     How many times does the average user post?
+Total number of photos/total number of users
+- 6.User ranking by postings higher to lower
+- 7.Total Posts by users.
+- 8.Total numbers of users who have posted at least one time.
+- 9. A brand wants to know which hashtags to use in a post. What are the top 5 most commonly used hashtags?
+-- 10 We have a small problem with bots on our site...
+Find users who have liked every single photo on the site
+- 11. We also have a problem with celebrities Find users who have never commented on a photo
 
--- q5 
-/*Our Investors want to know...
-How many times does the average user post?
-/*total number of photos/total number of users*/
-SELECT ROUND((SELECT COUNT(*)FROM photos)/(SELECT COUNT(*) FROM users),2);
+- 12. Find the count of users who have never commented on photo.
 
--- q6
-/* User ranking by postings higher to lower*/
-SELECT users.username,COUNT(photos.image_url)
-FROM users
-JOIN photos ON users.id = photos.user_id
-GROUP BY users.id
-ORDER BY 2 DESC;
+-13. Find users who have ever commented on a photo
 
--- q7
-/*Total Posts by users (longer versionof SELECT COUNT(*)FROM photos) */
-SELECT SUM(user_posts.total_posts_per_user)
-FROM (SELECT users.username,COUNT(photos.image_url) AS total_posts_per_user
-FROM users
-JOIN photos ON users.id = photos.user_id
-GROUP BY users.id) AS user_posts;
+-14. Find the count of users who have commented on a photo
 
--- q8
-/*total numbers of users who have posted at least one time */
-
--- q9
-/*A brand wants to know which hashtags to use in a post
-What are the top 5 most commonly used hashtags?*/
-SELECT tag_name, COUNT(tag_name) AS total
-FROM tags
-JOIN photo_tags ON tags.id = photo_tags.tag_id
-GROUP BY tags.id
-ORDER BY total DESC;
-
--- q10
-/*We have a small problem with bots on our site...
-Find users who have liked every single photo on the site*/
-SELECT users.id,username, COUNT(users.id) As total_likes_by_user
-FROM users
-JOIN likes ON users.id = likes.user_id
-GROUP BY users.id
-HAVING total_likes_by_user = (SELECT COUNT(*) FROM photos);
-
--- q11
-/*We also have a problem with celebrities
-Find users who have never commented on a photo*/
-
--- q12
--- /* Find the count of users who have never commented on phto */  
-
--- q13
-/*Find users who have ever commented on a photo*/
-
---q14 Find the count of users who have commented on a photo
-
--- q15
-/*Are we overrun with bots and celebrity accounts?
-Find the percentage of our users who have either never commented on a photo or have commented on photos before*/
+- 15. *Are we overrun with bots and celebrity accounts? Find the percentage of our users who have either never commented on a photo or have commented on photos before*
