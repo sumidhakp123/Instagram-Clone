@@ -1,7 +1,9 @@
-# Instagram-Clone 
 <div align="center">
   <img src="https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/23519098-3600-4da5-ab56-282126afb43a" width="50%" alt="InstagramClone.png">
 </div>
+# Instagram-Clone
+ 
+
 
 Created an Instagram Database in which 7 Tables were integrated through primary and foreign keys. 
 After database creation several tricky challenges were performed to through SQL queries.
