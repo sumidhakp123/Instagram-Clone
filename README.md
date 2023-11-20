@@ -22,8 +22,8 @@ After database creation several tricky challenges were performed to through SQL 
 </div>
 
 # KPIs
-- 1. We want to reward our users who have been around the longest.  Find the 5 oldest users.
-- 2.What day of the week do most users register on?  We need to figure out when to schedule an ad campgain
+ 1. We want to reward our users who have been around the longest.  Find the 5 oldest users.
+2. What day of the week do most users register on?  We need to figure out when to schedule an ad campgain
 - 3.We want to target our inactive users with an email campaign. Find the users who have never posted a photo
 - 4.We're running a new contest to see who can get the most likes on a single photo. WHO WON??!!
 - 5.Our Investors want to know...
