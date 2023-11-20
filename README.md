@@ -31,7 +31,7 @@ After database creation several tricky challenges were performed to through SQL 
 6. User ranking by postings higher to lower
 7. Total Posts by users.
 8. Total numbers of users who have posted at least one time.
-9.A brand wants to know which hashtags to use in a post. What are the top 5 most commonly used hashtags?
+9. A brand wants to know which hashtags to use in a post. What are the top 5 most commonly used hashtags?
 10. We have a small problem with bots on our site... Find users who have liked every single photo on the site
 11. We also have a problem with celebrities Find users who have never commented on a photo
 12. Find the count of users who have never commented on photo.
