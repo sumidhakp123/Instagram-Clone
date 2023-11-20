@@ -29,12 +29,12 @@ After database creation several tricky challenges were performed to through SQL 
 5. Our Investors want to know...
      How many times does the average user post? Total number of photos/total number of users
 6. User ranking by postings higher to lower
-7.Total Posts by users.
-8.Total numbers of users who have posted at least one time.
+7. Total Posts by users.
+8. Total numbers of users who have posted at least one time.
 9.A brand wants to know which hashtags to use in a post. What are the top 5 most commonly used hashtags?
 10. We have a small problem with bots on our site... Find users who have liked every single photo on the site
 11. We also have a problem with celebrities Find users who have never commented on a photo
 12. Find the count of users who have never commented on photo.
-13.Find users who have ever commented on a photo
+13. Find users who have ever commented on a photo
 14. Find the count of users who have commented on a photo
-15.Are we overrun with bots and celebrity accounts? Find the percentage of our users who have either never commented on a photo or have commented on photos before
+15. Are we overrun with bots and celebrity accounts? Find the percentage of our users who have either never commented on a photo or have commented on photos before
