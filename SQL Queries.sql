@@ -8,7 +8,7 @@ LIMIT 5;
 
 -- q2 
 /* What day of the week do most users register on?
-We need to figure out when to schedule an ad campgain */
+We need to figure out when to schedule an ad campgain*/
 SELECT date_format(created_at,'%W') AS 'day of the week', COUNT(*) AS 'total registration'
 FROM users
 GROUP BY 1
@@ -21,16 +21,16 @@ GROUP BY day
 ORDER BY total DESC;
 
 -- q3 
-/* We want to target our inactive users with an email campaign.
-Find the users who have never posted a photo */
+/*We want to target our inactive users with an email campaign.
+Find the users who have never posted a photo*/
 SELECT username
 FROM users
 LEFT JOIN photos ON users.id = photos.user_id
 WHERE photos.id IS NULL;
 
 -- q4 
-/* We are running a new contest to see who can get the most likes on a single photo.
-WHO WON??!! */
+/*We are running a new contest to see who can get the most likes on a single photo.
+WHO WON??!!*/
 SELECT users.username, photos.id, photos.image_url, COUNT(*) AS Total_Likes
 FROM likes
 JOIN photos ON photos.id = likes.photo_id
