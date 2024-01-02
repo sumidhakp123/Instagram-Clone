@@ -29,7 +29,7 @@ LEFT JOIN photos ON users.id = photos.user_id
 WHERE photos.id IS NULL;
 
 -- q4 
-/* We're running a new contest to see who can get the most likes on a single photo.
+/* We are running a new contest to see who can get the most likes on a single photo.
 WHO WON??!! */
 SELECT users.username, photos.id, photos.image_url, COUNT(*) AS Total_Likes
 FROM likes
