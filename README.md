@@ -1,40 +1,53 @@
-<div align="center">
-  <img src="https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/23519098-3600-4da5-ab56-282126afb43a" width="50%" alt="InstagramClone.png">
-</div>
+# Instagram Database & SQL Analysis
 
-# Instagram-Clone
- 
-Created an Instagram Database in which 7 Tables were integrated through primary and foreign keys. 
-After database creation several tricky challenges were performed to through SQL queries.
-7 tables are
-- Comments
-- Follows
-- Likes
-- Photo tags
-- Photos
-- Tags
-- Users
+A database design and SQL case study inspired by Instagram. The project models core social-platform activity and answers analytical questions about users, posts, engagement, and hashtags.
 
-### ER Diagram of Instagram-Clone
+## Data model
 
-<div align="center">
-  <img src="https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/67c69e54-87fd-49ee-b624-6eaa0c1deda2" width="75%" alt="ER Diagram.png">
-</div>
+The schema contains seven related tables:
 
-# KPIs
- 1. We want to reward our users who have been around the longest.  Find the 5 oldest users.
-2. What day of the week do most users register on?  We need to figure out when to schedule an ad campgain
-3. We want to target our inactive users with an email campaign. Find the users who have never posted a photo
-4. We're running a new contest to see who can get the most likes on a single photo. WHO WON??!!
-5. Our Investors want to know...
-     How many times does the average user post? Total number of photos/total number of users
-6. User ranking by postings higher to lower
-7. Total Posts by users.
-8. Total numbers of users who have posted at least one time.
-9. A brand wants to know which hashtags to use in a post. What are the top 5 most commonly used hashtags?
-10. We have a small problem with bots on our site... Find users who have liked every single photo on the site
-11. We also have a problem with celebrities Find users who have never commented on a photo
-12. Find the count of users who have never commented on photo.
-13. Find users who have ever commented on a photo
-14. Find the count of users who have commented on a photo
-15. Are we overrun with bots and celebrity accounts? Find the percentage of our users who have either never commented on a photo or have commented on photos before
+- **Users** — account information
+- **Photos** — posts shared by users
+- **Comments** — comments on photos
+- **Likes** — user likes on photos
+- **Follows** — follower relationships
+- **Tags** — hashtags
+- **Photo Tags** — association between photos and hashtags
+
+The tables are connected using primary and foreign keys.
+
+![Instagram database ER diagram](https://github.com/sumidhakp123/Instagram-Clone/assets/69155879/67c69e54-87fd-49ee-b624-6eaa0c1deda2)
+
+## Analysis questions
+
+The SQL exercises explore questions such as:
+
+- Who are the five oldest users?
+- Which weekday has the most registrations?
+- Which users have never posted a photo?
+- Which photo received the most likes?
+- How many photos does the average user post?
+- How do users rank by post count?
+- Which hashtags are used most often?
+- Which users have liked every photo?
+- Which users have never commented?
+- What share of users have never commented or have commented?
+
+These questions are framed as product, engagement, and account-quality KPIs.
+
+## Getting started
+
+1. Clone or download this repository.
+2. Open the SQL files in a database client compatible with the scripts.
+3. Create the database and tables, then load the supplied data (if included).
+4. Run the queries to explore the questions listed above.
+
+Check the SQL files for the specific database dialect and setup order.
+
+## Skills demonstrated
+
+Relational database design · primary and foreign keys · SQL joins · aggregation · subqueries · engagement analytics
+
+## Author
+
+[Sumidha Kumari Prasad](https://github.com/sumidhakp123)
